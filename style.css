@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 62.5%;
+}
+
+/**
+Nav
+*/
+nav {
+    min-height: 20vh;
+    background-color: rgb(100, 8, 80);
+}
+
+nav ul {
+    height: 20vh;
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/**
+    MAIN
+*/
+main {
+    position: relative;
+    padding: 100px 10% 0;
+}
+
+main h1 {
+    font-size: 1.5rem;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+main a {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    background-color: cyan;
+    border-radius: 10px;
+    left: 50%;
+    transition: 0.5s;
+}
+
+main a:hover {
+    background-color: blue;
+}
+
+
+.test {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #f00;
+}
+/**
+    SWUP
+*/
+.transition-fade {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+.transition-slide-down {
+    transform: translateY(0px);
+    transition: 2s;
+}
+
+html.is-animating .transition-slide-down {
+    transform: translateY(50px);
+}
+
+.transition-scale {
+    transform: scale(3);
+    transition: 0.3s;
+}
+/*
+html.is-leaving .transition-scale{
+    transform: scale(5);
+}
+*/
+html.is-rendering .transition-scale{
+    transform: scale(1);
+}
