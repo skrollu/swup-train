@@ -93,16 +93,3 @@ html.is-animating .transition-fade {
 html.is-animating .transition-slide-down {
     transform: translateY(50px);
 }
-
-.transition-scale {
-    transform: scale(3);
-    transition: 0.3s;
-}
-/*
-html.is-leaving .transition-scale{
-    transform: scale(5);
-}
-*/
-html.is-rendering .transition-scale{
-    transform: scale(1);
-}

@@ -5,4 +5,4 @@ const options = {
         '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])',
 };
 
-const swup = new Swup(options);
+const swup = new Swup (options);
