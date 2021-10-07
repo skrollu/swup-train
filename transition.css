@@ -1,0 +1,52 @@
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    padding: auto;
+}
+
+.box-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideRight 3s linear;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #488795;
+    animation: fadeIn 1.5s infinite;
+}
+
+@keyframes slideRight {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 30%;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 30%;
+    }
+}
