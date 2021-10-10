@@ -9,7 +9,7 @@ html {
   overflow: hidden;
 }
 
-.container {
+.circle-effect-container {
     top: 0;
     left: 0;
     position: absolute;
@@ -19,7 +19,7 @@ html {
     width: 100%;
 
     /** variables as tree inheritence */
-    --slide-duration: 4s;
+    --slide-duration: 3s;
     --nb-of-spaces: 5; /* number of circles elements + 1*/
     --reduce-delay: 0.08s
 }
@@ -36,6 +36,14 @@ html.is-leaving .transition-slide-circle {
     animation-duration: var(--slide-duration);
 }
 
+.transition-grow-scale {
+    transform: scale(1);
+}
+
+html.is-leaving .transition-grow-scale {
+    animation: scaleGrow 0.5s ease-in forwards;
+    animation-delay: var(--slide-duration);
+}
 
 .circle {
     height: 100px;
@@ -88,7 +96,13 @@ html.is-leaving .transition-fade-circle:nth-child(4) {
 }
 
 @keyframes fadeIn {
-    50% {
-        opacity: 95%;
+    20% {
+        opacity: 100%;
+    }
+}
+
+@keyframes scaleGrow {
+    100% {
+        transform: scale(100);
     }
 }

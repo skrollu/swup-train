@@ -5,16 +5,22 @@
     font: 62.5%;
 }
 
+body {
+    background-color: rgb(231, 231, 231);
+}
+
 /**
 Nav
 */
 nav {
+    position: relative;
+    z-index: 5;
     min-height: 20vh;
-    background-color: rgb(100, 8, 80);
+    background-color: rgb(0, 0, 0);
 }
 
 nav ul {
-    height: 20vh;
+    height: 10vh;
     margin: 0 20%;
     display: flex;
     justify-content: space-between;
@@ -25,30 +31,54 @@ nav ul {
 nav ul li a,
 nav ul li a:visited {
     text-decoration: none;
+    color: rgb(202, 202, 202);
+    font-size: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: .3s ease-in;
+}
+
+nav ul li a:hover {
     color: #fff;
-    font-size: 2rem;
 }
 
 /**
-    MAIN
+MAIN
 */
 main {
-    position: relative;
-    padding: 100px 10% 0;
+    position: absolute;
+    top: 10vh;
+    z-index: 10;
+    min-height: 100vh;
+    margin: 0 10%;
+    padding: 50px 25px;
+    background-color: #fff;
 }
 
 main h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Black Ops One';
+    margin-bottom: 10px;
+}
+
+main .grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    justify-content: space-between;
 }
 
 main p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+main .grid-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 main a {
-    position: absolute;
-    height: 100px;
+    margin-top: 20px;
+    height: 70px;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -56,16 +86,21 @@ main a {
     text-decoration: none;
     color: #fff;
     font-size: 2.5rem;
-    background-color: cyan;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #488795;
     border-radius: 10px;
-    left: 50%;
     transition: 0.5s;
 }
 
 main a:hover {
-    background-color: blue;
+    background-color: #00576b;
 }
 
+main .poster {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
 
 .test {
     height: 35px;
@@ -74,7 +109,7 @@ main a:hover {
     background-color: #f00;
 }
 /**
-    SWUP
+SWUP
 */
 .transition-fade {
     opacity: 1;
