@@ -35,7 +35,7 @@ html.is-leaving .transition-slide-circle {
     animation: slideRight linear;
     animation-duration: var(--slide-duration);
 }
-
+/* 
 .transition-grow-scale {
     transform: scale(1);
 }
@@ -44,7 +44,7 @@ html.is-leaving .transition-grow-scale {
     animation: scaleGrow 0.5s ease-in forwards;
     animation-delay: var(--slide-duration);
 }
-
+ */
 .circle {
     height: 100px;
     width: 100px;

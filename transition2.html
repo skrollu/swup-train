@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="transition.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <title>Bond</title>
 </head>
+
 <body>
-    
-    <div class="container">
-        <div class="slide-circle">
-            <div class="circle"></div>
+
+    <div class="circle-effect-container">
+        <div class="transition-slide-circle">
+            <div class="circle"></div> <!-- transition-grow-scale  -->
         </div>
 
         <div class="flex-circle">
-            <div class="fade-circle circle"></div>
-            <div class="fade-circle circle"></div>
-            <div class="fade-circle circle"></div>
-            <div class="fade-circle circle"></div>
+            <div class="transition-fade-circle circle"></div>
+            <div class="transition-fade-circle circle"></div>
+            <div class="transition-fade-circle circle"></div>
+            <div class="transition-fade-circle circle"></div>
         </div>
     </div>
 
@@ -30,26 +36,43 @@
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+
     <main id="swup">
         <div class="transition-fade">
-            <h1>Welcome transition 2</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-                eos provident aliquam recusandae ipsum accusantium et at odio quaerat.
-                Nemo ducimus magni voluptatem eum facilis doloremque. Ex illo vero
-                neque deserunt ipsum eos, sed quasi, iste repudiandae, obcaecati totam
-                rem officiis repellat ea dolore. Perspiciatis ut recusandae impedit
-                itaque earum.
-            </p>
-        </div>
-    
-        <div class="transition-slide-down">
-            <a href="/transition.html">transition</a>
+
+            <h1>MOURIR PEUT ATTENDRE</h1>
+
+            <div class="grid">
+                <div>
+                    <p>
+                        Mourir peut attendre (No Time to Die) est un film d'espionnage américano-britannique coécrit et
+                        réalisé par Cary Joji
+                        Fukunaga et sorti en 2021. Vingt-cinquième aventure cinématographique de James Bond produite par
+                        EON Productions, le
+                        film met en scène Daniel Craig qui incarne pour la cinquième et dernière fois James Bond1,2
+                        (mais pas l'agent 007
+                        incarné dans cet épisode par Lashana Lynch3, en raison du départ à la retraite de Bond), après
+                        Casino Royale, Quantum of
+                        Solace, Skyfall et 007 Spectre.
+
+                        La sortie a été maintes fois reportée dans le contexte de la pandémie de Covid-19.
+                        L'avant-première du film a lieu à
+                        Londres en septembre 2021.
+                    </p>
+                    <div class="grid-button transition-slide-down">
+                        <a href="/transition.html">Bande annonce</a>
+                        <a href="/transition.html">Réserver</a>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="./images/mourir_peut_attendre_poster.jpg" />
+                </div>
+            </div>
         </div>
     </main>
-    
+
     <script src="/node_modules/swup/dist/swup.min.js"></script>
     <script src="/app.js"></script>
 </body>
-</html> 
+
+</html>
