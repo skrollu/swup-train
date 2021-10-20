@@ -1,0 +1,9 @@
+p {
+  font-size: 10px;
+  color: aqua;
+}
+
+p.blackRed {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav {
+    min-height: 10vh;
+    width: 100%;
+    background-color: rgb(133, 0, 0);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+main {
+    flex-grow: 1;
+    padding: 50px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(211, 211, 211);
+}
+
+footer {
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+}
